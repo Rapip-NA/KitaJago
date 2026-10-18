@@ -1,0 +1,2 @@
+@extends('layout')
+@section('content')<section class="card narrow"><p class="eyebrow">OPERASIONAL</p><h1>Masuk admin</h1><p>Login ini khusus admin. Peserta menggunakan OTP email.</p><form method="post" action="/admin/login">@csrf<label>Email admin<input name="email" type="email" required autocomplete="username"></label><label>Password<input name="password" type="password" required autocomplete="current-password"></label><button>Masuk admin</button></form></section>@endsection
